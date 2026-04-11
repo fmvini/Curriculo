@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinícius Fatichi Marrocos — ADS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="theme-toggle" onclick="toggleTheme()" title="Alternar tema">
+        <span class="icon" id="theme-icon">☀️</span>
+        <span id="theme-label">LIGHT MODE</span>
+    </button>
+
+    <div class="page">
+
+        <div class="header-container">
+            <img src="img/me.jpeg" alt="Foto de Vinícius" class="profile-picture">
+            <h1 id="nome">Vinícius Fatichi Marrocos</h1>
+            <p class="subtitle">Analista &amp; Desenvolvedor de Sistemas</p>
+            <div class="nav-line">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <section id="infopessoal">
+            <h2 class="section-title"><span class="num">01</span> Informações Pessoais</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">Idade</div>
+                    <div class="info-value">17 anos (20/05/2008)</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Cidade</div>
+                    <div class="info-value">Socorro, SP</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao">
+            <h2 class="section-title"><span class="num">02</span> Formação</h2>
+            <div class="timeline-item">
+                <div class="tl-title">Ensino Médio Completo</div>
+                <div class="tl-sub">Colégio SOS Objetivo</div>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-title">Análise e Desenvolvimento de Sistemas</div>
+                <div class="tl-sub">IFSP — Ensino Superior (em andamento)</div>
+                <div class="tl-tag">Conclusão prevista: 2028</div>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <h2 class="section-title"><span class="num">03</span> Experiência</h2>
+            <div class="timeline-item">
+                <div class="tl-title">Restaurante Nosso Canto</div>
+                <div class="tl-sub">Operador de Caixa</div>
+                <div class="tl-tag">2024 — 2025</div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2 class="section-title"><span class="num">04</span> Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-chip">Python</div>
+                <div class="skill-chip">C</div>
+                <div class="skill-chip">JavaScript</div>
+                <div class="skill-chip">HTML</div>
+                <div class="skill-chip">CSS</div>
+                <div class="skill-chip">Desenvolvimento Web</div>
+                <div class="skill-chip">Inglês B2 (CEFR)</div>
+            </div>
+        </section>
+
+        <section id="cursos">
+            <h2 class="section-title"><span class="num">05</span> Cursos &amp; Badges</h2>
+            <div class="badges-grid">
+                <div class="badge-card">
+                    <img src="img/html-essentials.png" alt="Badge HTML Essentials" class="badge-img">
+                    <div class="badge-info">
+                        <div class="badge-name">HTML Essentials</div>
+                        <div class="badge-issuer">CISCO</div>
+                    </div>
+                </div>
+                <div class="badge-card">
+                    <img src="img/introduction-to-cybersecurity.png" alt="Badge Cybersecurity" class="badge-img">
+                    <div class="badge-info">
+                        <div class="badge-name">Intro to Cybersecurity</div>
+                        <div class="badge-issuer">CISCO</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2 class="section-title"><span class="num">06</span> Contato</h2>
+
+            <div class="contact-links">
+                <a href="mailto:viniciusfmarrocos@gmail.com" class="contact-link">
+                    <span class="icon">✉️</span> viniciusfmarrocos@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/vinícius-fatichi-marrocos" target="_blank" class="contact-link">
+                    <span class="icon">💼</span> LinkedIn
+                </a>
+                <a href="https://github.com/fmvini" target="_blank" class="contact-link">
+                    <span class="icon">🐙</span> GitHub
+                </a>
+            </div>
+
+            <div class="contact-form-title">Envie uma mensagem</div>
+
+            <div class="form-grid">
+                <div class="form-field">
+                    <label for="sender-name">Seu nome</label>
+                    <input type="text" id="sender-name" placeholder="Como você se chama?">
+                </div>
+                <div class="form-field">
+                    <label for="sender-email">Seu email</label>
+                    <input type="email" id="sender-email" placeholder="Para eu responder">
+                </div>
+                <div class="form-field full">
+                    <label for="sender-reason">Motivo do contato</label>
+                    <textarea id="sender-reason" placeholder="Descreva o motivo do seu contato..."></textarea>
+                </div>
+            </div>
+
+            <button class="send-btn" onclick="sendContact()">ENVIAR MENSAGEM</button>
+            <div class="form-status" id="form-status"></div>
+        </section>
+
+        <footer>
+            &lt;/&gt; Vinícius F. Marrocos · ADS · IFSP · 2025
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
