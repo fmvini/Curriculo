@@ -729,3 +729,23 @@ section:nth-child(6) { animation-delay: 0.30s; }
     .form-field.full { grid-column: 1; }
     section         { padding: 24px 20px; }
 }
+
+.cert-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 12px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.cert-btn:hover {
+    background: var(--purple);
+    color: white;
+    box-shadow: var(--glow-purple);
+}
